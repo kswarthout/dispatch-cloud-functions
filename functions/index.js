@@ -25,7 +25,7 @@ exports.addUserToTeam = functions.database.ref('users/{userID}/currentTeam').onW
     		longitude: user.longitude,
     		status: user.currentStatus
     	});
-    	
+
     	const teamRef = event.data.adminRef.parent.parent.child('teams').child(teamID);
     	teamRef.child('latitude').set(user.latitude);
     	teamRef.child('longitude').set(user.longitude);
@@ -56,6 +56,77 @@ exports.addUserToTeam = functions.database.ref('users/{userID}/currentTeam').onW
 // 	});
 // });
 
+/**
+ * Triggers when a crisis is updated. If that crisis is unassigned (status =
+ * open) then the users registered as part of the appropriate team (crisis
+ * teamName) are notified. Tokens are stored in the team under teamMembers.
+ *
+ */
 
+exports.sendCrisisNotification = functions.database.ref('/crisis/').onWrite(event => {
+
+  //event.data.val() will contain all of the crises. I need to find the one that hasn't
+  //been responded to.
+  //I'm not handling the case where two crisis are registered simultaneously.
+
+  var crisis_table_values = event.data.val();
+
+  console.log("crisis_table_values ", crisis_table_values);
+  //console.log("crisis_table_values by crisis id", crisis_table_values[crisisId]);
+
+  for (var key in crisis_table_values){
+      if (crisis_table_values[key]["status"] && crisis_table_values[key]["status"] == "open"){
+        var team = crisis_table_values[key]["teamID"];
+        var crisisId = crisis_table_values[key]["crisisID"];
+        var crisisAddress = crisis_table_values[key]["crisisAddress"];
+      }
+  }
+
+  console.log("team = ", team, "crisisId = ", crisisId);
+
+  // Get the values at team, crisisId, and crisisAddress. I need to write this as a promise thats fulfilled
+  // before the get device tokens promise
+
+    // Get the list of device notification tokens.
+
+  const getTeamMemberNotificationTokens = admin.database().ref(`/teams/${team}/tokens/`).once('value');
+
+  return Promise.all([getTeamMemberNotificationsTokens]).then(results =>  {
+    var teamMembers = results[0].val();
+    var tokens = [];
+
+    console.log("The first team member is ", teamMembers[0]);
+
+    for (var key in teamMembers) {
+      if (teamMembers.hasOwnProperty(key)) {
+        console.log(key + " -> " + teamMembers[key]["token"]);
+        tokens.push(teamMembers[key]["token"]);
+      }
+    }
+
+    // Notification details.
+    const payload = {
+      data: {
+        crisis_id: crisisId,
+        crisis_address: crisisAddress
+      }
+    };
+
+    // testing
+
+    var token = 0;
+
+    // Send notifications to all tokens.
+    return admin.messaging().sendToDevice(tokens[0], payload).then(response => {
+      response.results.forEach((result, index) => {
+        const error = result.error;
+        if (error) {
+          console.error('Failure sending notification to', tokens[index], error);
+          // Cleanup the tokens who are not registered anymore.
+        }
+      });
+    });
+    });
+  });
 
 
