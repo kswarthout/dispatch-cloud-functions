@@ -1,123 +1,148 @@
-[debug] [2017-11-21T20:26:47.462Z] ----------------------------------------------------------------------
-[debug] [2017-11-21T20:26:47.462Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kbullard\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase experimental:functions:shell
-[debug] [2017-11-21T20:26:47.462Z] CLI Version:   3.15.2
-[debug] [2017-11-21T20:26:47.462Z] Platform:      win32
-[debug] [2017-11-21T20:26:47.462Z] Node Version:  v6.11.1
-[debug] [2017-11-21T20:26:47.462Z] Time:          Tue Nov 21 2017 12:26:47 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:47.462Z] ----------------------------------------------------------------------
+[debug] [2017-12-05T18:13:47.556Z] ----------------------------------------------------------------------
+[debug] [2017-12-05T18:13:47.558Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
+[debug] [2017-12-05T18:13:47.559Z] CLI Version:   3.16.0
+[debug] [2017-12-05T18:13:47.559Z] Platform:      darwin
+[debug] [2017-12-05T18:13:47.559Z] Node Version:  v6.11.1
+[debug] [2017-12-05T18:13:47.559Z] Time:          Tue Dec 05 2017 10:13:47 GMT-0800 (PST)
+[debug] [2017-12-05T18:13:47.559Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-11-21T20:26:47.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-11-21T20:26:47.477Z] > authorizing via signed-in user
-[debug] [2017-11-21T20:26:47.477Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-11-21T20:26:47.477Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/89rCgNxcIoH4mYPFwXL89bDXomTG_kmE0YND0CS_ygU',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Nov 21 2017 12:26:47 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:47.618Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T20:26:47.618Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
- Tue Nov 21 2017 12:26:47 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:48.181Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T20:26:48.181Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
- Tue Nov 21 2017 12:26:48 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:48.697Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T18:13:47.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-05T18:13:47.571Z] > authorizing via signed-in user
+[debug] [2017-12-05T18:13:47.574Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
+  
+ Tue Dec 05 2017 10:13:47 GMT-0800 (PST)
+[debug] [2017-12-05T18:13:48.143Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T18:13:48.145Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
+  
+ Tue Dec 05 2017 10:13:48 GMT-0800 (PST)
+[debug] [2017-12-05T18:13:48.737Z] <<< HTTP RESPONSE 200
 [info] i  functions: Preparing to emulate functions.
-[debug] [2017-11-21T20:26:49.337Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
- Tue Nov 21 2017 12:26:49 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:49.337Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
- Tue Nov 21 2017 12:26:49 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T20:26:49.744Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T20:26:49.962Z] <<< HTTP RESPONSE 200
-[info] +  functions: addUserToTeam
-[debug] [2017-11-21T23:56:43.229Z] ----------------------------------------------------------------------
-[debug] [2017-11-21T23:56:43.231Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kbullard\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase experimental:functions:shell
-[debug] [2017-11-21T23:56:43.232Z] CLI Version:   3.15.2
-[debug] [2017-11-21T23:56:43.232Z] Platform:      win32
-[debug] [2017-11-21T23:56:43.232Z] Node Version:  v6.11.1
-[debug] [2017-11-21T23:56:43.233Z] Time:          Tue Nov 21 2017 15:56:43 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:43.233Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2017-11-21T23:56:43.244Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-11-21T23:56:43.244Z] > authorizing via signed-in user
-[debug] [2017-11-21T23:56:43.245Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-11-21T23:56:43.246Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/89rCgNxcIoH4mYPFwXL89bDXomTG_kmE0YND0CS_ygU',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Nov 21 2017 15:56:43 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:43.392Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T23:56:43.423Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
- Tue Nov 21 2017 15:56:43 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:43.830Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T23:56:43.830Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
- Tue Nov 21 2017 15:56:43 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:44.174Z] <<< HTTP RESPONSE 200
-[info] i  functions: Preparing to emulate functions.
-[debug] [2017-11-21T23:56:44.502Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
- Tue Nov 21 2017 15:56:44 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:44.502Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
- Tue Nov 21 2017 15:56:44 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-21T23:56:44.924Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-21T23:56:44.939Z] <<< HTTP RESPONSE 200
-[info] +  functions: addUserToTeam
-[info] +  functions: updateTeamValuesFromUser
-[debug] [2017-11-22T00:23:32.467Z] ----------------------------------------------------------------------
-[debug] [2017-11-22T00:23:32.467Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kbullard\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase experimental:functions:shell
-[debug] [2017-11-22T00:23:32.467Z] CLI Version:   3.15.2
-[debug] [2017-11-22T00:23:32.467Z] Platform:      win32
-[debug] [2017-11-22T00:23:32.467Z] Node Version:  v6.11.1
-[debug] [2017-11-22T00:23:32.467Z] Time:          Tue Nov 21 2017 16:23:32 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-22T00:23:32.467Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2017-11-22T00:23:32.484Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-11-22T00:23:32.484Z] > authorizing via signed-in user
-[debug] [2017-11-22T00:23:32.486Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
- Tue Nov 21 2017 16:23:32 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-22T00:23:32.956Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-22T00:23:32.958Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
- Tue Nov 21 2017 16:23:32 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-22T00:23:33.381Z] <<< HTTP RESPONSE 200
-[info] i  functions: Preparing to emulate functions.
-[debug] [2017-11-22T00:23:33.741Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
- Tue Nov 21 2017 16:23:33 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-22T00:23:33.741Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
- Tue Nov 21 2017 16:23:33 GMT-0800 (Pacific Standard Time)
-[debug] [2017-11-22T00:23:34.132Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-22T00:23:34.303Z] <<< HTTP RESPONSE 200
-[info] +  functions: addUserToTeam
-[info] +  functions: userRemovedFromTeam
-[debug] [2017-11-29T03:15:01.906Z] ----------------------------------------------------------------------
-[debug] [2017-11-29T03:15:01.909Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
-[debug] [2017-11-29T03:15:01.909Z] CLI Version:   3.15.3
-[debug] [2017-11-29T03:15:01.909Z] Platform:      darwin
-[debug] [2017-11-29T03:15:01.909Z] Node Version:  v6.11.1
-[debug] [2017-11-29T03:15:01.910Z] Time:          Tue Nov 28 2017 19:15:01 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:01.910Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2017-11-29T03:15:01.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-11-29T03:15:01.925Z] > authorizing via signed-in user
-[debug] [2017-11-29T03:15:01.927Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-11-29T03:15:01.927Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/xPxMftTtMP38NRrAjfIaMQV5Ri9qg5bMf7SvUKSpMHM',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Nov 28 2017 19:15:01 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:02.091Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-29T03:15:02.106Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
- Tue Nov 28 2017 19:15:02 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:02.708Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-29T03:15:02.709Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
- Tue Nov 28 2017 19:15:02 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:04.367Z] <<< HTTP RESPONSE 200
-[info] i  functions: Preparing to emulate functions.
-[debug] [2017-11-29T03:15:04.847Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
- Tue Nov 28 2017 19:15:04 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:04.848Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
- Tue Nov 28 2017 19:15:04 GMT-0800 (PST)
-[debug] [2017-11-29T03:15:05.357Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-29T03:15:05.421Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T18:13:48.987Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
+  
+ Tue Dec 05 2017 10:13:48 GMT-0800 (PST)
+[debug] [2017-12-05T18:13:48.988Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
+  
+ Tue Dec 05 2017 10:13:48 GMT-0800 (PST)
+[debug] [2017-12-05T18:13:49.814Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T18:13:49.862Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: addUserToTeam
-[info] ✔  functions: updateTeamOnMemberChange
+[info] ✔  functions: sendCrisisNotification
+[debug] [2017-12-05T19:02:22.994Z] ----------------------------------------------------------------------
+[debug] [2017-12-05T19:02:22.997Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
+[debug] [2017-12-05T19:02:22.998Z] CLI Version:   3.16.0
+[debug] [2017-12-05T19:02:22.998Z] Platform:      darwin
+[debug] [2017-12-05T19:02:22.998Z] Node Version:  v6.11.1
+[debug] [2017-12-05T19:02:22.998Z] Time:          Tue Dec 05 2017 11:02:22 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:22.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-05T19:02:23.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-05T19:02:23.012Z] > authorizing via signed-in user
+[debug] [2017-12-05T19:02:23.014Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-05T19:02:23.014Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/xPxMftTtMP38NRrAjfIaMQV5Ri9qg5bMf7SvUKSpMHM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Dec 05 2017 11:02:23 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:23.303Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T19:02:23.314Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
+  
+ Tue Dec 05 2017 11:02:23 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:23.784Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T19:02:23.785Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
+  
+ Tue Dec 05 2017 11:02:23 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:24.242Z] <<< HTTP RESPONSE 200
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-12-05T19:02:24.535Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
+  
+ Tue Dec 05 2017 11:02:24 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:24.535Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
+  
+ Tue Dec 05 2017 11:02:24 GMT-0800 (PST)
+[debug] [2017-12-05T19:02:25.095Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T19:02:25.116Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: addUserToTeam
+[info] ✔  functions: sendCrisisNotification
+[debug] [2017-12-05T20:05:16.887Z] ----------------------------------------------------------------------
+[debug] [2017-12-05T20:05:16.889Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
+[debug] [2017-12-05T20:05:16.889Z] CLI Version:   3.16.0
+[debug] [2017-12-05T20:05:16.889Z] Platform:      darwin
+[debug] [2017-12-05T20:05:16.890Z] Node Version:  v6.11.1
+[debug] [2017-12-05T20:05:16.890Z] Time:          Tue Dec 05 2017 12:05:16 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:16.890Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-05T20:05:16.904Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-05T20:05:16.904Z] > authorizing via signed-in user
+[debug] [2017-12-05T20:05:16.906Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-05T20:05:16.907Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/xPxMftTtMP38NRrAjfIaMQV5Ri9qg5bMf7SvUKSpMHM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Dec 05 2017 12:05:16 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:17.156Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T20:05:17.165Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
+  
+ Tue Dec 05 2017 12:05:17 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:17.700Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T20:05:17.701Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
+  
+ Tue Dec 05 2017 12:05:17 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:18.353Z] <<< HTTP RESPONSE 200
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-12-05T20:05:18.650Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
+  
+ Tue Dec 05 2017 12:05:18 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:18.650Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
+  
+ Tue Dec 05 2017 12:05:18 GMT-0800 (PST)
+[debug] [2017-12-05T20:05:19.377Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T20:05:19.379Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: updateTeamStatus
+[info] ✔  functions: addUserToTeam
+[info] ✔  functions: sendCrisisNotification
+[info] ✔  functions: syncUserStatusWithTeamMemberStatus
+[debug] [2017-12-05T21:11:03.810Z] ----------------------------------------------------------------------
+[debug] [2017-12-05T21:11:03.813Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
+[debug] [2017-12-05T21:11:03.813Z] CLI Version:   3.16.0
+[debug] [2017-12-05T21:11:03.813Z] Platform:      darwin
+[debug] [2017-12-05T21:11:03.813Z] Node Version:  v6.11.1
+[debug] [2017-12-05T21:11:03.814Z] Time:          Tue Dec 05 2017 13:11:03 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:03.814Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-05T21:11:03.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-05T21:11:03.826Z] > authorizing via signed-in user
+[debug] [2017-12-05T21:11:03.828Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-05T21:11:03.828Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/xPxMftTtMP38NRrAjfIaMQV5Ri9qg5bMf7SvUKSpMHM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Dec 05 2017 13:11:03 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:04.104Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T21:11:04.113Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/team-orange-20666  
+  
+ Tue Dec 05 2017 13:11:04 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:04.974Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T21:11:04.975Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/team-orange-20666/tokens  
+  
+ Tue Dec 05 2017 13:11:04 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:05.503Z] <<< HTTP RESPONSE 200
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-12-05T21:11:05.857Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/team-orange-20666  
+  
+ Tue Dec 05 2017 13:11:05 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:05.858Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/team-orange-20666/apiKeys  
+  
+ Tue Dec 05 2017 13:11:05 GMT-0800 (PST)
+[debug] [2017-12-05T21:11:06.448Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-05T21:11:06.560Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: updateTeamStatus
+[info] ✔  functions: addUserToTeam
+[info] ✔  functions: syncTeamMemberStatusOnTeamStatusChange
+[info] ✔  functions: syncUserStatusWithTeamMemberStatus
+[info] ✔  functions: sendCrisisNotification
